@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 
 def index(req):
-    return HttpResponse('HELLO WORLD')
+    return render(req,'index.html')
 
 
 def specific(request):
@@ -14,8 +14,7 @@ def specific(request):
 
 
 
-def article(request,article_id):
-    return render(request,'index.html',{'article_id':article_id})
+
 
 
 
